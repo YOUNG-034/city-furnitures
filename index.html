@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Furnitures | Modern Home & Living Furniture Kenya</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fdf8f6',
+                            100: '#f2e8e5',
+                            500: '#c2410c',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            800: '#9a3412',
+                            900: '#7c2d12',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased font-sans">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-stone-900 text-stone-200 text-xs sm:text-sm py-2 px-4 border-b border-stone-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-2 text-amber-400 font-semibold">
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>FREE DELIVERY COUNTRYWIDE ACROSS KENYA</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <span><i class="fa-solid fa-phone text-stone-400 mr-1"></i> Line 1: <a href="tel:0786236195" class="hover:text-white underline">0786 236 195</a></span>
+                <span><i class="fa-solid fa-phone text-stone-400 mr-1"></i> Line 2: <a href="tel:0108226684" class="hover:text-white underline">0108 226 684</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-40 border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="text-xl sm:text-2xl font-black tracking-tight text-stone-900 flex items-center gap-2">
+                    <span class="w-9 h-9 rounded-lg bg-orange-600 text-white flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-couch"></i>
+                    </span>
+                    <span>CITY <span class="text-orange-600">FURNITURES</span></span>
+                </a>
+                
+                <!-- Quick Category Scroll Links (Desktop) -->
+                <div class="hidden lg:flex space-x-6 text-sm font-semibold text-stone-600">
+                    <a href="#sofas" class="hover:text-orange-600 transition">Sofa Sets</a>
+                    <a href="#coffee-tables" class="hover:text-orange-600 transition">Coffee Tables</a>
+                    <a href="#tv-stands" class="hover:text-orange-600 transition">TV Stands</a>
+                    <a href="#chester-beds" class="hover:text-orange-600 transition">Chester Beds</a>
+                    <a href="#wardrobes" class="hover:text-orange-600 transition">Wardrobes</a>
+                </div>
+
+                <!-- Call Hotline Buttons -->
+                <div class="flex items-center gap-2">
+                    <a href="tel:0786236195" class="hidden sm:inline-flex items-center gap-1.5 bg-stone-100 hover:bg-stone-200 text-stone-800 px-3 py-2 rounded-lg text-xs font-bold transition">
+                        <i class="fa-solid fa-phone text-orange-600"></i> Call Sales
+                    </a>
+                    <a href="https://wa.me/254786236195?text=Hello%20City%20Furnitures,%20I%20would%20like%20to%20inquire%20about%20your%20products." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-3.5 py-2 rounded-lg text-xs sm:text-sm font-bold flex items-center gap-1.5 shadow-sm transition">
+                        <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Category Sticky Pills -->
+            <div class="flex lg:hidden overflow-x-auto py-2.5 gap-2 no-scrollbar border-t border-stone-100 text-xs font-semibold whitespace-nowrap">
+                <a href="#sofas" class="bg-stone-100 px-3 py-1.5 rounded-full hover:bg-orange-100 hover:text-orange-700">🛋️ Sofa Sets</a>
+                <a href="#coffee-tables" class="bg-stone-100 px-3 py-1.5 rounded-full hover:bg-orange-100 hover:text-orange-700">☕ Coffee Tables</a>
+                <a href="#tv-stands" class="bg-stone-100 px-3 py-1.5 rounded-full hover:bg-orange-100 hover:text-orange-700">📺 TV Stands</a>
+                <a href="#chester-beds" class="bg-stone-100 px-3 py-1.5 rounded-full hover:bg-orange-100 hover:text-orange-700">🛏️ Chester Beds</a>
+                <a href="#wardrobes" class="bg-stone-100 px-3 py-1.5 rounded-full hover:bg-orange-100 hover:text-orange-700">🚪 Wardrobes</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-stone-950 text-white overflow-hidden py-16 sm:py-24">
+        <div class="absolute inset-0 opacity-30 bg-[url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center"></div>
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 text-center space-y-6">
+            <span class="inline-flex items-center gap-2 bg-orange-500/20 text-orange-300 border border-orange-500/40 px-3.5 py-1 rounded-full text-xs sm:text-sm font-bold tracking-wide uppercase">
+                <i class="fa-solid fa-bolt"></i> Best Workshop Prices in Kenya
+            </span>
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                Modern Furniture For Living Rooms & Bedrooms
+            </h1>
+            <p class="text-base sm:text-lg text-stone-300 max-w-2xl mx-auto font-light leading-relaxed">
+                Affordable, handcrafted Sofas, TV Stands, Coffee Tables, Chester Beds, and Wardrobes. Delivered straight to your doorstep countrywide with zero shipping fees.
+            </p>
+            <div class="flex flex-wrap justify-center gap-3 pt-2">
+                <a href="#sofas" class="bg-orange-600 hover:bg-orange-700 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition text-sm">
+                    View Living Room
+                </a>
+                <a href="#chester-beds" class="bg-stone-800 hover:bg-stone-700 border border-stone-700 text-white font-bold px-6 py-3 rounded-xl transition text-sm">
+                    View Bedroom Sets
+                </a>
+            </div>
+            <!-- Perks -->
+            <div class="pt-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-left max-w-4xl mx-auto border-t border-stone-800 text-stone-300 text-xs sm:text-sm">
+                <div class="flex items-center gap-2"><i class="fa-solid fa-van-shuttle text-orange-400"></i> Free Delivery Kenya-wide</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-shield-halved text-orange-400"></i> Solid Timber Framing</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-palette text-orange-400"></i> Custom Colors Available</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-hand-holding-dollar text-orange-400"></i> Direct Workshop Rates</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: SOFA SETS -->
+    <section id="sofas" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-4 border-b border-stone-200">
+            <div>
+                <span class="text-orange-600 font-bold uppercase text-xs tracking-wider">Living Room Comfort</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-stone-900 mt-1">Sofa Sets Collection</h2>
+                <p class="text-stone-500 text-sm mt-1">High-density foam, durable fabric/leatherette options, built for comfort.</p>
+            </div>
+            <div class="mt-3 md:mt-0 text-xs text-stone-500">
+                Inquiries: <a href="tel:0786236195" class="text-orange-600 font-bold hover:underline">0786 236 195</a>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            <!-- 1 Seater -->
+            <div class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="h-40 bg-stone-200 relative">
+                        <img src="https://images.unsplash.com/photo-1580481077197-28564b19e27c?auto=format&fit=crop&w=500&q=80" alt="1 Seater Sofa" class="w-full h-full object-cover">
+                        <span class="absolute top-2 left-2 bg-stone-900/80 text-white text-[11px] px-2 py-0.5 rounded">Single</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-stone-900 text-base">1-Seater Sofa</h3>
+                        <p class="text-stone-500 text-xs mt-1">Accent armchair for cozy spaces or offices.</p>
+                        <div class="mt-4">
+                            <span class="text-xs text-stone-400 block font-medium">Price</span>
+                            <span class="text-xl font-black text-orange-600">Ksh 4,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 pt-0">
+                    <a href="https://wa.me/254786236195?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%201-Seater%20Sofa%20at%20Ksh%204,000" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2 rounded-lg font-semibold text-xs flex items-center justify-center gap-1.5 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 2 Seater -->
+            <div class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="h-40 bg-stone-200 relative">
+                        <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=500&q=80" alt="2 Seater Sofa" class="w-full h-full object-cover">
+                        <span class="absolute top-2 left-2 bg-stone-900/80 text-white text-[11px] px-2 py-0.5 rounded">Loveseat</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-stone-900 text-base">2-Seater Sofa</h3>
+                        <p class="text-stone-500 text-xs mt-1">Compact couch ideal for modern studio living.</p>
+                        <div class="mt-4">
+                            <span class="text-xs text-stone-400 block font-medium">Price</span>
+                            <span class="text-xl font-black text-orange-600">Ksh 8,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 pt-0">
+                    <a href="https://wa.me/254786236195?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%202-Seater%20Sofa%20at%20Ksh%208,000" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2 rounded-lg font-semibold text-xs flex items-center justify-center gap-1.5 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3 Seater -->
+            <div class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="h-40 bg-stone-200 relative">
+                        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=500&q=80" alt="3 Seater Sofa" class="w-full h-full object-cover">
+                        <span class="absolute top-2 left-2 bg-stone-900/80 text-white text-[11px] px-2 py-0.5 rounded">Popular</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-stone-900 text-base">3-Seater Sofa</h3>
+                        <p class="text-stone-500 text-xs mt-1">Full length 3-person family living sofa.</p>
+                        <div class="mt-4">
+                            <span class="text-xs text-stone-400 block font-medium">Price</span>
+                            <span class="text-xl font-black text-orange-600">Ksh 13,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 pt-0">
+                    <a href="https://wa.me/254786236195?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%203-Seater%20Sofa%20at%20Ksh%2013,000" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2 rounded-lg font-semibold text-xs flex items-center justify-center gap-1.5 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 5 Seater -->
+            <div class="bg-white rounded-xl shadow-sm border-2 border-orange-500 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="h-40 bg-stone-200 relative">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=500&q=80" alt="5 Seater Sofa" class="w-full h-full object-cover">
+                        <span class="absolute top-2 left-2 bg-orange-600 text-white text-[11px] font-bold px-2 py-0.5 rounded">Best Value</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-stone-900 text-base">5-Seater Set</h3>
+                        <p class="text-stone-500 text-xs mt-1">Spacious 3+1+1 or 3+2 combination set.</p>
+                        <div class="mt-4">
+                            <span class="text-xs text-stone-400 block font-medium">Price</span>
+                            <span class="text-xl font-black text-orange-600">Ksh 25,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 pt-0">
+                    <a href="https://wa.me/254786236195?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%205-Seater%20Sofa%20Set%20at%20Ksh%2025,000" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2 rounded-lg font-semibold text-xs flex items-center justify-center gap-1.5 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 7 Seater -->
+            <div class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="h-40 bg-stone-200 relative">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=500&q=80" alt="7 Seater Sofa" class="w-full h-full object-cover">
+                        <span class="absolute top-2 left-2 bg-stone-900/80 text-white text-[11px] px-2 py-0.5 rounded">Full Luxury</span>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-stone-900 text-base">7-Seater Set</h3>
+                        <p class="text-stone-500 text-xs mt-1">Complete luxury 3+2+1+1 executive living suite.</p>
+                        <div class="mt-4">
+                            <span class="text-xs text-stone-400 block font-medium">Price</span>
+                            <span class="text-xl font-black text-orange-600">Ksh 30,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 pt-0">
+                    <a href="https://wa.me/254786236195?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%207-Seater%20Sofa%20Set%20at%20Ksh%2030,000" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2 rounded-lg font-semibold text-xs flex items-center justify-center gap-1.5 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: COFFEE TABLES -->
+    <section id="coffee-tables" class="py-16 bg-stone-100/70 border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-4 border-b border-stone-200">
+                <div>
+                    <span class="text-orange-600 font-bold uppercase text-xs tracking-wider">Centerpieces</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-stone-900 mt-1">Coffee Tables</h2>
+                    <p class="text-stone-500 text-sm mt-1">Sleek, modern wooden and glass finishes. Free delivery countrywide.</p>
+                </div>
+                <div class="mt-3 md:mt-0 text-xs text-stone-600">
+                    Hotline: <a href="tel:0108226684" class="text-orange-600 font-bold hover:underline">0108 226 684</a> (Call & WhatsApp)
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Small 2ft -->
+                <div class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="h-48 bg-stone-200 relative">
+                            <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=600&q=80" alt="Small Coffee Table 2ft" class="w-full h-full object-cover">
+                            <span class="absolute top-2 left-2 bg-stone-900/80 text-white text-xs px-2.5 py-1 rounded">2 Feet</span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-stone-900 text-lg">Small Coffee Table (2ft)</h3>
+                            <p class="text-stone-500 text-xs mt-1">Compact round or rectangular coffee table, perfect for side corners or smaller living rooms.</p>
+                            <div class="mt-4">
+                                <span class="text-xs text-stone-400 block font-medium">Price</span>
+                                <span class="text-2xl font-black text-orange-600">KES 6,500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <a href="https://wa.me/254108226684?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%20Small%20(2ft)%20Coffee%20Table%20at%20KES%206,500" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg font-semibold text-sm flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Medium 3ft -->
+                <div class="bg-white rounded-xl shadow-sm border-2 border-orange-500 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="h-48 bg-stone-200 relative">
+                            <img src="https://images.unsplash.com/photo-1532372320572-cda25653a26d?auto=format&fit=crop&w=600&q=80" alt="Medium Coffee Table 3ft" class="w-full h-full object-cover">
+                            <span class="absolute top-2 left-2 bg-orange-600 text-white text-xs font-bold px-2.5 py-1 rounded">3 Feet • Popular</span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-stone-900 text-lg">Medium Coffee Table (3ft)</h3>
+                            <p class="text-stone-500 text-xs mt-1">Standard size coffee table with bottom shelf storage for magazines and remotes.</p>
+                            <div class="mt-4">
+                                <span class="text-xs text-stone-400 block font-medium">Price</span>
+                                <span class="text-2xl font-black text-orange-600">KES 9,500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <a href="https://wa.me/254108226684?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%20Medium%20(3ft)%20Coffee%20Table%20at%20KES%209,500" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg font-semibold text-sm flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Large 4ft -->
+                <div class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <div class="h-48 bg-stone-200 relative">
+                            <img src="https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&w=600&q=80" alt="Large Coffee Table 4ft" class="w-full h-full object-cover">
+                            <span class="absolute top-2 left-2 bg-stone-900/80 text-white text-xs px-2.5 py-1 rounded">4 Feet</span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-bold text-stone-900 text-lg">Large Coffee Table (4ft)</h3>
+                            <p class="text-stone-500 text-xs mt-1">Spacious centerpiece for executive living rooms. Built with premium reinforced wood.</p>
+                            <div class="mt-4">
+                                <span class="text-xs text-stone-400 block font-medium">Price</span>
+                                <span class="text-2xl font-black text-orange-600">KES 10,500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <a href="https://wa.me/254108226684?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%20Large%20(4ft)%20Coffee%20Table%20at%20KES%2010,500" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg font-semibold text-sm flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: TV STANDS -->
+    <section id="tv-stands" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-4 border-b border-stone-200">
+            <div>
+                <span class="text-orange-600 font-bold uppercase text-xs tracking-wider">Entertainment Units</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-stone-900 mt-1">TV Stands Collection</h2>
+                <p class="text-stone-500 text-sm mt-1">Sturdy, cable-managed consoles suited for 32" up to 85" Smart TVs.</p>
+            </div>
+            <div class="mt-3 md:mt-0 text-xs text-stone-600">
+                Inquiries: <a href="tel:0108226684" class="text-orange-600 font-bold hover:underline">0108 226 684</a> (Call & WhatsApp)
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- 3ft TV Stand -->
+            <div class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="h-44 bg-stone-200 relative">
+                        <img src="https://images.unsplash.com/photo-1601760562234-9814eea6663a?auto=format&fit=crop&w=600&q=80" alt="3ft TV Stand" class="w-full h-full object-cover">
+                        <span class="absolute top-2 left-2 bg-stone-900/80 text-white text-xs px-2.5 py-1 rounded">3 Feet</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-stone-900 text-base">3ft TV Stand</h3>
+                        <p class="text-stone-500 text-xs mt-1">Best suited for 32" to 43" screens with receiver and console shelving.</p>
+                        <div class="mt-4">
+                            <span class="text-xs text-stone-400 block font-medium">Price</span>
+                            <span class="text-2xl font-black text-orange-600">KSH 7,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 pt-0">
+                    <a href="https://wa.me/254108226684?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%203ft%20TV%20Stand%20at%20KSH%207,000" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg font-semibold text-xs flex items-center justify-center gap-1.5 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 4ft TV Stand -->
+            <div class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="h-44 bg-stone-200 relative">
+                        <img src="https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=600&q=80" alt="4ft TV Stand" class="w-full h-full object-cover">
+                        <span class="absolute top-2 left-2 bg-stone-900/80 text-white text-xs px-2.5 py-1 rounded">4 Feet</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-stone-900 text-base">4ft TV Stand</h3>
+                        <p class="text-stone-500 text-xs mt-1">Accommodates up to 55" TVs with double cabinet doors and open shelf.</p>
+                        <div class="mt-4">
+                            <span class="text-xs text-stone-400 block font-medium">Price</span>
+                            <span class="text-2xl font-black text-orange-600">KSH 10,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 pt-0">
+                    <a href="https://wa.me/254108226684?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%204ft%20TV%20Stand%20at%20KSH%2010,000" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg font-semibold text-xs flex items-center justify-center gap-1.5 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 5ft TV Stand -->
+            <div class="bg-white rounded-xl shadow-sm border-2 border-orange-500 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="h-44 bg-stone-200 relative">
+                        <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=600&q=80" alt="5ft TV Stand" class="w-full h-full object-cover">
+                        <span class="absolute top-2 left-2 bg-orange-600 text-white text-xs font-bold px-2.5 py-1 rounded">5 Feet • Popular</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-stone-900 text-base">5ft TV Stand</h3>
+                        <p class="text-stone-500 text-xs mt-1">Spacious setup for 55" to 65" screens. Includes media drawers.</p>
+                        <div class="mt-4">
+                            <span class="text-xs text-stone-400 block font-medium">Price</span>
+                            <span class="text-2xl font-black text-orange-600">KSH 13,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 pt-0">
+                    <a href="https://wa.me/254108226684?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%205ft%20TV%20Stand%20at%20KSH%2013,000" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg font-semibold text-xs flex items-center justify-center gap-1.5 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 6ft TV Stand -->
+            <div class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="h-44 bg-stone-200 relative">
+                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=600&q=80" alt="6ft TV Stand" class="w-full h-full object-cover">
+                        <span class="absolute top-2 left-2 bg-stone-900/80 text-white text-xs px-2.5 py-1 rounded">6 Feet • Luxury</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-stone-900 text-base">6ft TV Stand</h3>
+                        <p class="text-stone-500 text-xs mt-1">Extra-wide wall console unit for 65"+ home cinema systems and soundbars.</p>
+                        <div class="mt-4">
+                            <span class="text-xs text-stone-400 block font-medium">Price</span>
+                            <span class="text-2xl font-black text-orange-600">KSH 26,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 pt-0">
+                    <a href="https://wa.me/254108226684?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%206ft%20TV%20Stand%20at%20KSH%2026,000" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg font-semibold text-xs flex items-center justify-center gap-1.5 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: CHESTER BEDS -->
+    <section id="chester-beds" class="py-16 bg-stone-100/70 border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-4 border-b border-stone-200">
+                <div>
+                    <span class="text-orange-600 font-bold uppercase text-xs tracking-wider">Luxury Sleep</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-stone-900 mt-1">Chester Beds</h2>
+                    <p class="text-stone-500 text-sm mt-1">Deep button-tufted headboards with seasoned timber framing.</p>
+                </div>
+                <div class="mt-3 md:mt-0 text-xs text-stone-600">
+                    Bed Orders Hotline: <a href="tel:0786236195" class="text-orange-600 font-bold hover:underline">0786 236 195</a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 4x6 Bed -->
+                <div class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col justify-between hover:shadow-lg transition">
+                    <div>
+                        <div class="h-52 bg-stone-200 relative">
+                            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80" alt="4x6 Chester Bed" class="w-full h-full object-cover">
+                            <span class="absolute top-2 left-2 bg-stone-900/80 text-white text-xs px-2.5 py-1 rounded">Size: 4x6 Feet</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-stone-900">4x6 Chester Bed</h3>
+                            <ul class="text-stone-600 text-xs space-y-2 mt-4">
+                                <li><i class="fa-solid fa-check text-orange-600 mr-1.5"></i> High-density padded tufted headboard</li>
+                                <li><i class="fa-solid fa-check text-orange-600 mr-1.5"></i> Durable timber foundation</li>
+                                <li><i class="fa-solid fa-check text-orange-600 mr-1.5"></i> Free Countrywide Delivery</li>
+                            </ul>
+                            <div class="mt-6 pt-4 border-t border-stone-100">
+                                <span class="text-xs text-stone-400 block font-medium">Price</span>
+                                <span class="text-2xl font-black text-orange-600">KSH 10,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/254786236195?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%204x6%20Chester%20Bed%20at%20KSH%2010,000" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg font-semibold text-sm flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 5x6 Bed -->
+                <div class="bg-white rounded-xl shadow-md border-2 border-orange-500 overflow-hidden flex flex-col justify-between hover:shadow-xl transition relative">
+                    <div class="bg-orange-600 text-white text-xs font-bold text-center py-1 tracking-wider uppercase">
+                        Most Popular Choice
+                    </div>
+                    <div>
+                        <div class="h-52 bg-stone-200 relative">
+                            <img src="https://images.unsplash.com/photo-1540518614846-7ede433c4ef9?auto=format&fit=crop&w=700&q=80" alt="5x6 Chester Bed" class="w-full h-full object-cover">
+                            <span class="absolute top-2 left-2 bg-stone-900/80 text-white text-xs px-2.5 py-1 rounded">Size: 5x6 Feet (Queen)</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-stone-900">5x6 Chester Bed</h3>
+                            <ul class="text-stone-600 text-xs space-y-2 mt-4">
+                                <li><i class="fa-solid fa-check text-orange-600 mr-1.5"></i> Premium velvet / fabric finish options</li>
+                                <li><i class="fa-solid fa-check text-orange-600 mr-1.5"></i> Reinforced base slats for heavy duty</li>
+                                <li><i class="fa-solid fa-check text-orange-600 mr-1.5"></i> Free Countrywide Delivery</li>
+                            </ul>
+                            <div class="mt-6 pt-4 border-t border-stone-100">
+                                <span class="text-xs text-stone-400 block font-medium">Price</span>
+                                <span class="text-2xl font-black text-orange-600">KSH 15,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/254786236195?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%205x6%20Chester%20Bed%20at%20KSH%2015,000" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg font-semibold text-sm flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 6x6 Bed -->
+                <div class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col justify-between hover:shadow-lg transition">
+                    <div>
+                        <div class="h-52 bg-stone-200 relative">
+                            <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=700&q=80" alt="6x6 Chester Bed" class="w-full h-full object-cover">
+                            <span class="absolute top-2 left-2 bg-stone-900/80 text-white text-xs px-2.5 py-1 rounded">Size: 6x6 Feet (King)</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-stone-900">6x6 Chester Bed</h3>
+                            <ul class="text-stone-600 text-xs space-y-2 mt-4">
+                                <li><i class="fa-solid fa-check text-orange-600 mr-1.5"></i> Master bedroom grand design</li>
+                                <li><i class="fa-solid fa-check text-orange-600 mr-1.5"></i> Heavy timber framework</li>
+                                <li><i class="fa-solid fa-check text-orange-600 mr-1.5"></i> Free Countrywide Delivery</li>
+                            </ul>
+                            <div class="mt-6 pt-4 border-t border-stone-100">
+                                <span class="text-xs text-stone-400 block font-medium">Price</span>
+                                <span class="text-2xl font-black text-orange-600">KSH 20,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://wa.me/254786236195?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%206x6%20Chester%20Bed%20at%20KSH%2020,000" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg font-semibold text-sm flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: WARDROBES -->
+    <section id="wardrobes" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 pb-4 border-b border-stone-200">
+            <div>
+                <span class="text-orange-600 font-bold uppercase text-xs tracking-wider">Bedroom Storage</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-stone-900 mt-1">Wardrobes Collection</h2>
+                <p class="text-stone-500 text-sm mt-1">Solid wood/MDF wardrobes with internal rails and drawer compartments.</p>
+            </div>
+            <div class="mt-3 md:mt-0 text-xs text-stone-600">
+                Wardrobe Orders: <a href="tel:0786236195" class="text-orange-600 font-bold hover:underline">0786 236 195</a>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Without doors -->
+            <div class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="h-44 bg-stone-200 relative">
+                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=600&q=80" alt="Without Doors Wardrobe" class="w-full h-full object-cover">
+                        <span class="absolute top-2 left-2 bg-stone-900/80 text-white text-xs px-2.5 py-1 rounded">Open Concept</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-stone-900 text-base">Without Doors</h3>
+                        <p class="text-stone-500 text-xs mt-1">Modern open-rack shelving and hanging wardrobe.</p>
+                        <div class="mt-4">
+                            <span class="text-xs text-stone-400 block font-medium">Price</span>
+                            <span class="text-2xl font-black text-orange-600">Ksh 7,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 pt-0">
+                    <a href="https://wa.me/254786236195?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%20Wardrobe%20Without%20Doors%20at%20Ksh%207,000" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg font-semibold text-xs flex items-center justify-center gap-1.5 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 2-Door Plain -->
+            <div class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="h-44 bg-stone-200 relative">
+                        <img src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=600&q=80" alt="2-Door Plain Wardrobe" class="w-full h-full object-cover">
+                        <span class="absolute top-2 left-2 bg-stone-900/80 text-white text-xs px-2.5 py-1 rounded">2 Doors</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-stone-900 text-base">2-Door Plain</h3>
+                        <p class="text-stone-500 text-xs mt-1">Compact bedroom wardrobe with hanging rail and lockable door.</p>
+                        <div class="mt-4">
+                            <span class="text-xs text-stone-400 block font-medium">Price</span>
+                            <span class="text-2xl font-black text-orange-600">Ksh 9,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 pt-0">
+                    <a href="https://wa.me/254786236195?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%202-Door%20Plain%20Wardrobe%20at%20Ksh%209,000" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg font-semibold text-xs flex items-center justify-center gap-1.5 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3-Door Plain -->
+            <div class="bg-white rounded-xl shadow-sm border-2 border-orange-500 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="h-44 bg-stone-200 relative">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=600&q=80" alt="3-Door Plain Wardrobe" class="w-full h-full object-cover">
+                        <span class="absolute top-2 left-2 bg-orange-600 text-white text-xs font-bold px-2.5 py-1 rounded">3 Doors • Popular</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-stone-900 text-base">3-Door Plain</h3>
+                        <p class="text-stone-500 text-xs mt-1">Multi-partition unit with clothes rail, folded clothes shelves, and drawers.</p>
+                        <div class="mt-4">
+                            <span class="text-xs text-stone-400 block font-medium">Price</span>
+                            <span class="text-2xl font-black text-orange-600">Ksh 12,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 pt-0">
+                    <a href="https://wa.me/254786236195?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%203-Door%20Plain%20Wardrobe%20at%20Ksh%2012,000" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg font-semibold text-xs flex items-center justify-center gap-1.5 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 4-Door Plain -->
+            <div class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="h-44 bg-stone-200 relative">
+                        <img src="https://images.unsplash.com/photo-1540518614846-7ede433c4ef9?auto=format&fit=crop&w=600&q=80" alt="4-Door Plain Wardrobe" class="w-full h-full object-cover">
+                        <span class="absolute top-2 left-2 bg-stone-900/80 text-white text-xs px-2.5 py-1 rounded">4 Doors • Large</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-stone-900 text-base">4-Door Plain</h3>
+                        <p class="text-stone-500 text-xs mt-1">Maximum bedroom storage with dual hanging spaces and shoe shelves.</p>
+                        <div class="mt-4">
+                            <span class="text-xs text-stone-400 block font-medium">Price</span>
+                            <span class="text-2xl font-black text-orange-600">Ksh 15,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 pt-0">
+                    <a href="https://wa.me/254786236195?text=Hello%20City%20Furnitures,%20I%20want%20to%20order%20the%204-Door%20Plain%20Wardrobe%20at%20Ksh%2015,000" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-lg font-semibold text-xs flex items-center justify-center gap-1.5 transition">
+                        <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotlines Contact Card Section -->
+    <section class="py-14 bg-stone-900 text-white">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-2xl sm:text-3xl font-extrabold mb-2">Speak Directly To Our Workshop Team</h2>
+            <p class="text-stone-400 text-sm max-w-lg mx-auto mb-8">Have custom dimensions, specific color requests, or want same-day delivery updates? Contact our lines below:</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+                <!-- Line 1 -->
+                <div class="bg-stone-800 border border-stone-700 p-6 rounded-2xl flex flex-col items-center">
+                    <span class="text-xs uppercase font-bold text-orange-400 tracking-wider">Line 1: Beds, Sofas & Wardrobes</span>
+                    <a href="tel:0786236195" class="text-2xl font-black text-white mt-1 hover:text-orange-400 transition">0786 236 195</a>
+                    <div class="flex gap-2 mt-4 w-full">
+                        <a href="tel:0786236195" class="flex-1 bg-stone-700 hover:bg-stone-600 text-white text-xs py-2 rounded-lg font-bold flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-phone"></i> Call
+                        </a>
+                        <a href="https://wa.me/254786236195" target="_blank" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white text-xs py-2 rounded-lg font-bold flex items-center justify-center gap-1.5">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Line 2 -->
+                <div class="bg-stone-800 border border-stone-700 p-6 rounded-2xl flex flex-col items-center">
+                    <span class="text-xs uppercase font-bold text-orange-400 tracking-wider">Line 2: TV Stands & Coffee Tables</span>
+                    <a href="tel:0108226684" class="text-2xl font-black text-white mt-1 hover:text-orange-400 transition">0108 226 684</a>
+                    <div class="flex gap-2 mt-4 w-full">
+                        <a href="tel:0108226684" class="flex-1 bg-stone-700 hover:bg-stone-600 text-white text-xs py-2 rounded-lg font-bold flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-phone"></i> Call
+                        </a>
+                        <a href="https://wa.me/254108226684" target="_blank" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white text-xs py-2 rounded-lg font-bold flex items-center justify-center gap-1.5">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-400 py-12 border-t border-stone-800 text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="md:col-span-2">
+                <span class="text-xl font-black text-white tracking-tight">CITY <span class="text-orange-500">FURNITURES</span></span>
+                <p class="text-stone-400 mt-2 max-w-sm">
+                    Kenya's trusted furniture makers. Providing stylish, long-lasting sofas, Chester beds, TV entertainment units, and bedroom wardrobes with complimentary countrywide delivery.
+                </p>
+                <div class="flex gap-4 mt-4 text-white">
+                    <span class="bg-stone-800 p-2 rounded-full"><i class="fa-solid fa-truck text-orange-400"></i> Free Delivery</span>
+                    <span class="bg-stone-800 p-2 rounded-full"><i class="fa-solid fa-shield text-orange-400"></i> Durable Timber</span>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-white uppercase text-xs tracking-wider mb-3">Product Catalog</h4>
+                <ul class="space-y-2 text-stone-400">
+                    <li><a href="#sofas" class="hover:text-white transition">Sofa Sets (1 to 7 seaters)</a></li>
+                    <li><a href="#coffee-tables" class="hover:text-white transition">Coffee Tables (2ft to 4ft)</a></li>
+                    <li><a href="#tv-stands" class="hover:text-white transition">TV Stands (3ft to 6ft)</a></li>
+                    <li><a href="#chester-beds" class="hover:text-white transition">Chester Beds (4x6, 5x6, 6x6)</a></li>
+                    <li><a href="#wardrobes" class="hover:text-white transition">Wardrobes (Open to 4-Door)</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-white uppercase text-xs tracking-wider mb-3">Contact Lines</h4>
+                <div class="space-y-2 text-stone-400">
+                    <p><strong class="text-stone-200">Line 1:</strong> 0786 236 195</p>
+                    <p><strong class="text-stone-200">Line 2:</strong> 0108 226 684</p>
+                    <p class="text-emerald-400 mt-2"><i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp Orders 24/7</p>
+                    <p class="text-stone-500 text-xs">Nationwide Delivery Across Kenya</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 mt-8 pt-6 border-t border-stone-800/60 text-center text-stone-500 text-xs">
+            &copy; <span id="year"></span> City Furnitures Kenya. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Floating Action WhatsApp Button -->
+    <a href="https://wa.me/254786236195?text=Hello%20City%20Furnitures,%20I%20would%20like%20to%20place%20an%20order." target="_blank" aria-label="Chat on WhatsApp" class="fixed bottom-5 right-5 z-50 bg-[#25D366] hover:bg-[#20ba5a] text-white p-3.5 sm:p-4 rounded-full shadow-2xl flex items-center justify-center transition hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
